@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="" href="">
+</head>
+<body>
+    
+    <header>
+      <h1>Image Gallery</h1>
+    <form id="searchForm" class="search" onsubmit="return false;">
+      <input id="searchInput" placeholder="Search images (e.g. mountains, city skyline, food)" autocomplete="off" />
+      <button id="searchBtn" type="button">Search</button>
+    </form>
+  </header>
+
+  <nav class="nav-links">
+  <a href="#" data-query="nature">Nature</a>
+  <a href="#" data-query="city">City</a>
+  <a href="#" data-query="animals">Animals</a>
+  <a href="#" data-query="technology">Technology</a>
+  <a href="#" data-query="space">Space</a>
+  <a href="#" data-query="food">Food</a>
+</nav>
+
+  <main>
+    <div id="gallery" class="gallery" aria-live="polite"></div>
+    <div id="loader" class="loader">Loading images…</div>
+  </main>
+
+  <footer>
+        <p>&copy; 2025 || all Rights Reserved</p>
+  </footer>
+  <script src="project.js"></script>
+</body>
+</html>
